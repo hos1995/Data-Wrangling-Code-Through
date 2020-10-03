@@ -1,0 +1,10 @@
+---
+title: "About This Website"
+output:
+  html_document:
+    theme: cerulean
+---
+
+I learned most of this by having the assignment to build my own R Notebook in a previous course that I took in my undergrad. I found it very useful and still use the method to this day to have a clean looking, one-stop shop for tips and tricks that I may have forgotten when it comes to coding in R. 
+
+The example I will share further comes from (heavily guided) support from my Professor Sanders at Brigham Young University - Idaho. 

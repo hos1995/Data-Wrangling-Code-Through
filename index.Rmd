@@ -1,0 +1,97 @@
+---
+title: "Getting Started"
+output:
+  html_document:
+    theme: cerulean
+---
+
+<br>
+
+----
+
+# Intro
+
+This is meant to be a **simple, straight-forward** explanation of how to create your own R website that runs off of the files in your *local computer*. Of course, once built there are multiple applications like sharing your files to GitHub and allowing public use of the website but if that is the overall goal this probably isn't the most ideal route to take. 
+
+I use this method to create an online, R-Generated notebook for simple things that I have learned how to do in R. I use this method to create *my own private textbook* of R code that helps with the simple things. I'll even share a page that was made to get you started! 
+
+<br>
+
+---
+
+# Step 1: Create a New Project (RStudio)
+
+The very first step in generating a very basic website in R is to create a new project by clicking on: 
+
+**File -> New Project -> New Directory -> Simple R Markdown Website**
+
+I would click **Browse** at this point to choose the place that you want all of your project-related files to be kept.
+
+
+<br>
+
+---
+
+# Step 2: Open the Auto-Generated Files
+
+Great! Now you have your project and some files were created automatically:
+
+* _site.yml
+
+* about.RMD
+
+* index.RMD
+
+* 'YourProjectName.Rproj
+
+This is where I would suggest opening both of the **markdown** files and the **.yml** file. Think of the `_site.yml` file as being the outline of your website. What you put inside here will determine the navigation bar, menus, and a myriad of other things. But for the purposes here, we will just go with updating the already linked markdown files and going through the process of adding a new one to the mix. 
+
+You should be seeing the following basic syntax. You can see where I made changes and how it applies to the website: 
+
+```{r, eval=FALSE}
+name: "Code-Through"
+navbar:
+  title: "Building a Simple R Site"
+  left:
+    - text: "Getting Started"
+      href: index.html
+    - text: "About"
+      href: about.html
+```
+
+What you see is the `Title` of the overall website you are creating, to show up in the navigation bar on the top and going from left to right will be selectable options going into your **.html** documents that are generated when you knit your markdown documents.
+
+So, by going into your `index.html` document, adding whatever you want to, you can change what the site will look like!
+
+If you have any subfolders that you end up saving your markdown and html documents to, make sure to reference them in the YAML file in the `href` section so it knows where to go to find the page you are trying to display.
+
+<br>
+
+----
+
+# Step 3: Get Fancy With It!
+
+Go on! Add all the markdown files you want with any tricks you would like! If it runs on it's own, it will show up in your website! You could even read in your own data and have a website of visuals and reports that could be useful to stakeholders if you built it well enough! 
+
+Here's a trick that I love using when building a site: 
+
+Instead of just making a huge, long list of sites, I like to create **a menu** to put a good number of things in. This is only a simple update to the navigation bar in the `_site.yml` document: 
+
+```{r, eval=FALSE}
+name: "Code-Through"
+navbar:
+  title: "Building a Simple R Site"
+  left:
+    - text: "Getting Started"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Cool R Stuff"
+      menu:
+        - text: "R Markdown Help"
+          href: RMarkdownHints.html
+        - text: "R Colors"
+          href: ./Images/Rcolor.pdf
+```
+
+See, all I did was add a menu, tab over, and there it is! I added a few other images/files from my notebook so you can see some of the stuff you can do with it!

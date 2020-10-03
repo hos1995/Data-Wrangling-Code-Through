@@ -1,0 +1,14 @@
+name: "Code-Through"
+navbar:
+  title: "Building a Simple R Site"
+  left:
+    - text: "Getting Started"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Cool R Stuff"
+      menu:
+        - text: "R Markdown Help"
+          href: RMarkdownHints.html
+        - text: "R Colors"
+          href: ./Images/Rcolor.pdf
