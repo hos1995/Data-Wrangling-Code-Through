@@ -1,4 +1,7 @@
 name: "Code-Through"
+output:
+  html_document:
+  theme: cerulean
 navbar:
   title: "Building a Simple R Site"
   left:
